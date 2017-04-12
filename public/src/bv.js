@@ -16,7 +16,7 @@ var context;
 function newEvent(e) {
     // Only check for a return/enter press - Event 13
     if (e.which === 13 || e.keyCode === 13) {
-        var userInput = document.getElementById('chatMessage');
+        var userInput = document.getElementById('chatInput');
         text = userInput.value; // Using text as a recurring variable through functions
         text = text.replace(/(\r\n|\n|\r)/gm, ""); // Remove erroneous characters
         // If there is any input then check if this is a claim step
@@ -144,7 +144,7 @@ function displayMessage(text, user) {
     }
     chat.appendChild(bubble);
     chat.scrollTop = chat.scrollHeight; // Move chat down to the last message displayed
-    document.getElementById('chatMessage').focus();
+    document.getElementById('chatInput').focus();
 }
 
 function displayCarsMessage(carsArray, watson) {
@@ -161,7 +161,7 @@ function displayCarsMessage(carsArray, watson) {
     bubble.innerHTML += "</div>";
     chat.appendChild(bubble);
     chat.scrollTop = chat.scrollHeight; // Move chat down to the last message displayed
-    document.getElementById('chatMessage').focus();
+    document.getElementById('chatInput').focus();
 }
 
 function chooseCar(name, price) {

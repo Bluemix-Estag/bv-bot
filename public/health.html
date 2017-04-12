@@ -34,17 +34,18 @@
             width: 60%;
             height: 150px;
         }
-        #typing_div{
-            
-        }
-        #typing_div img{
+        
+        #typing_div {}
+        
+        #typing_div img {
             width: 30px;
             height: 30px;
         }
+
     </style>
 </head>
 
-<body class="homePage" onload="initConvOnLoad();">
+<body class="homePage">
     <div class="healthContainer">
         <header>
             <div class="banner">
@@ -65,17 +66,48 @@
             </div>
         </header>
         <section class="healthLayout">
-            <div class="chatbot">
-                <div class="anaBanner">Dúvidas? Experimente perguntar ao BV.</div>
+<!--            <div class="chatbot">-->
+<!--                <div class="anaBanner">Dúvidas? Experimente perguntar ao BV.</div>-->
+                <!--                <div id="chatBox" class="dialogcontainer"></div>-->
+                
+            <div class="custom-bot" id="custom-bot" >
+                <div class="bot-title" onclick="showBot();">Hello world</div>
                 <div id="chatBox" class="dialogcontainer"></div>
                 <div id="typing_div"></div>
-                <input type=t ext id="chatMessage" class="dialoginput" placeholder="Digite sua mensagem aqui " onkeypress="return newEvent(event)" /> </div>
-           
+                <input type="text" id="chatInput" class="chatInput" placeholder="Digite sua mensagem aqui " onkeypress="return newEvent(event)" /> 
+            </div>
+<!--            </div>-->
         </section>
     </div>
 </body>
+<script>
+    var firstTime = false;
+    var opened = false;
+
+    function showBot(element) {
+        var element = document.getElementById("custom-bot");
+        var input = document.getElementById("chatInput");
+        var chatBox = document.getElementById("chatBox");
+        if (!opened) {
+            element.style.animationName = 'bot-animate-open';
+            input.style.display = "block";
+            chatBox.style.display = "block";
+            opened = true;
+
+            if(!firstTime) initConvOnLoad();
+                        firstTime = true;
+        } else {
+            element.style.animationName = 'bot-animate-close';
+                        input.style.display = "none";
+                        chatBox.style.display = "none";
+            opened = false;
+        }
+    }
+
+</script>
 <script src="src/cloudco.js"></script>
 <script src="src/bv.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+
 
 </html>
