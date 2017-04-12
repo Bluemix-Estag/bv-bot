@@ -1,10 +1,10 @@
-# Cloud Insurance Co. - Página inicial e chatbot
+# BV Chatbot - Página inicial e chatbot
 
 | **master** | [![Build Status](https://travis-ci.org/IBM-Bluemix/insurance-bot.svg?branch=master)](https://travis-ci.org/IBM-Bluemix/insurance-bot) |
 | ----- | ----- |
 | **dev** | [![Build Status](https://travis-ci.org/IBM-Bluemix/insurance-bot.svg?branch=dev)](https://travis-ci.org/IBM-Bluemix/insurance-bot) |
 
-Esse repositório é parte do projeto maior [Cloud Insurance Co.](https://github.com/IBM-Bluemix/cloudco-insurance).
+Esse repositório é parte do projeto maior [BV Chatbot](https://github.com/IBM-Bluemix/cloudco-insurance).
 
 # Visão Geral
 
