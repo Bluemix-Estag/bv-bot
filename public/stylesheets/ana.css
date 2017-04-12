@@ -8,6 +8,7 @@ body{
 /* Styling for the chat bot */
 .chatbot {
     background-color: white;
+    border-top: 2px solid #9c0e31;
     border-left: 2px solid #9c0e31;
     min-width: 200px;
     max-width: 325px;
