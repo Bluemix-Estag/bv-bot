@@ -1,3 +1,10 @@
+body{
+    background-image: url(../images/health/bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-color: #dfdfdf;
+}
+
 /* Styling for the chat bot */
 .chatbot {
     background-color: white;
