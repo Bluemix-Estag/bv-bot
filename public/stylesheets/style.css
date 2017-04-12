@@ -1339,7 +1339,7 @@
      justify-content: flex-start;
      background-color: #fff;
      animation-fill-mode: forwards;
-     animation-duration: 2s;
+     animation-duration: 0.8s;
      height: 40px;
  }
 
