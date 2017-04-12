@@ -77,10 +77,15 @@ function userMessage(message) {
             if (response['cars'] && response['cars'].length > 0 && response['context']['flag']) {
                 delete response['context']['flag'];
                 displayCarsMessage(response['cars'], watson);
+                userMessage('ok');
             }
             
-            if(response['cnf']){
-                delete response['cnf'];
+            if(response['context']['cnf']){
+                delete response['context']['cnf'];
+                delete response['context']['flag'];
+                delete response['context']['carro'];
+                delete response['context']['modelo'];
+//                delete response['context']['modelo'];
                 userMessage('cnf');
             }
             
