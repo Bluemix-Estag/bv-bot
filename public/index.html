@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Banco Votorantim</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+</head>
+
+<body class="homePage" onload="checkStatus()">
+
+    <div class="container">
+        <div class="outline">
+            <header>
+                <div class="banner">
+                    <div class="titleArea">
+                        <div class="logo"><img class="logoImage" src="images\bv-logo-novo.png"></div>
+                        <div class="name"><a class="home" href=".">Banco Votorantim</a></div>
+                    </div>
+                    <div class="loginArea">
+                        <div id="login" class="menu"><a class="menulink" href="./login">Entrar</a></div>
+                        <div id="logout" class="menu" style="display:none"><a class="menulink" href="./logout">Sair</a></div>
+                        <div id="status "></div>
+                    </div>
+                </div>
+            </header>
+            <header>
+                <div class="bannersecond">
+                  <div class="sectionTitleArea">
+                    <p class = "tagline">Banco Votorantim</p>
+                  </div
+                </div>
+            </header>
+
+            <section class="layout">
+                <aside class="primary">
+                    <div class="tiles">
+                      <div class="tile">
+                          <a href="./health">
+                              <div class="glow">
+                                  <img class="tileImage" src="images/Auto.svg ">
+                              </div>
+                              <div class="label ">CARRO</div>
+                              <div>
+                                <button class="tileButton">Ver Benefícios</button>
+                              </div>
+                          </a>
+                      </div>
+                    </div>
+                </aside>
+                <div class="secondary">
+                    <div id = "askWatson" class = "askWatson" style="display:none">
+                      <a href="./health">
+                        <img src = "images/Watson_Avatar.svg" height = "60px" class = "watsonLogo"/>
+                        <span>Precisa de Ajuda? Pergunte sobre as politícas ao nosso bot inteligente</span>
+                      </a>
+                      <hr>
+                    </div>
+
+                    <div class="welcome"><strong>Banco Votorantim.</strong> É um site conceitual de seguros construído utilizando <a href="http://www.ibm.com/cloud-computing/bluemix/" target= "_blank">IBM Bluemix</a> e <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/">IBM Watson</a>. <br />
+                        Nenhuma das politícas são reais... o site existe para experimentar e mostrar idéias cognitivas e de computação em nuvem no contexto de seguros.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- layout section -->
+        </div>
+    </div>
+
+</body>
+
+<script src="src/cloudco.js"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-77345475-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</html>

@@ -1,0 +1,710 @@
+{
+    "name": "Votorantim Empréstimo",
+    "created": "2017-04-07T14:36:42.245Z",
+    "intents": [{
+        "intent": "farewell",
+        "created": "2017-04-07T14:50:53.703Z",
+        "updated": "2017-04-07T14:50:53.703Z",
+        "examples": [{
+            "text": "até",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "até logo",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "até mais",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "bye",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "falou",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "flw",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "tchau",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "valeu",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "vlw",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }, {
+            "text": "xau",
+            "created": "2017-04-07T14:50:53.703Z",
+            "updated": "2017-04-07T14:50:53.703Z"
+        }],
+        "description": null
+    }, {
+        "intent": "get_credit",
+        "created": "2017-04-07T14:37:10.579Z",
+        "updated": "2017-04-10T14:16:34.744Z",
+        "examples": [{
+            "text": "credit",
+            "created": "2017-04-07T15:00:48.093Z",
+            "updated": "2017-04-07T15:00:48.093Z"
+        }, {
+            "text": "credito",
+            "created": "2017-04-07T15:00:39.738Z",
+            "updated": "2017-04-07T15:00:39.738Z"
+        }, {
+            "text": "crédito",
+            "created": "2017-04-07T15:00:32.741Z",
+            "updated": "2017-04-07T15:00:32.741Z"
+        }, {
+            "text": "din",
+            "created": "2017-04-07T16:41:19.490Z",
+            "updated": "2017-04-07T16:41:19.490Z"
+        }, {
+            "text": "din din",
+            "created": "2017-04-07T16:41:13.370Z",
+            "updated": "2017-04-07T16:41:13.370Z"
+        }, {
+            "text": "dinheiro",
+            "created": "2017-04-07T14:55:27.395Z",
+            "updated": "2017-04-07T14:55:27.395Z"
+        }, {
+            "text": "pessoal",
+            "created": "2017-04-10T14:16:34.744Z",
+            "updated": "2017-04-10T14:16:34.744Z"
+        }, {
+            "text": "preciso de crédito",
+            "created": "2017-04-07T14:38:14.247Z",
+            "updated": "2017-04-07T14:38:14.247Z"
+        }, {
+            "text": "preciso de dinheiro",
+            "created": "2017-04-07T14:37:18.629Z",
+            "updated": "2017-04-07T14:37:18.629Z"
+        }, {
+            "text": "preciso de grana",
+            "created": "2017-04-07T14:38:28.767Z",
+            "updated": "2017-04-07T14:38:28.767Z"
+        }, {
+            "text": "preciso de um empréstimo",
+            "created": "2017-04-07T14:37:37.977Z",
+            "updated": "2017-04-07T14:37:37.977Z"
+        }, {
+            "text": "quero comprar um carro",
+            "created": "2017-04-07T14:37:31.175Z",
+            "updated": "2017-04-07T14:37:31.175Z"
+        }, {
+            "text": "quero fazer um empréstimo",
+            "created": "2017-04-07T14:38:10.983Z",
+            "updated": "2017-04-07T14:38:10.983Z"
+        }, {
+            "text": "to precisando de dinheiro",
+            "created": "2017-04-07T14:38:21.225Z",
+            "updated": "2017-04-07T14:38:21.225Z"
+        }, {
+            "text": "to precisando de grana",
+            "created": "2017-04-07T14:38:00.620Z",
+            "updated": "2017-04-07T14:38:00.620Z"
+        }],
+        "description": null
+    }, {
+        "intent": "greeting",
+        "created": "2017-04-07T14:48:52.445Z",
+        "updated": "2017-04-10T14:16:35.115Z",
+        "examples": [{
+            "text": "ahoy",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "boa noite",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "boa tarde",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "bom dia",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "coe",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "coé",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "eae",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "eai",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "hello",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "hey",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "iae",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "oi",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "oie",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "ola",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "olá",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "salve",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }, {
+            "text": "yo",
+            "created": "2017-04-07T14:48:52.445Z",
+            "updated": "2017-04-07T14:48:52.445Z"
+        }],
+        "description": null
+    }],
+    "updated": "2017-04-10T14:52:16.280Z",
+    "entities": [{
+        "type": null,
+        "entity": "emprestimo",
+        "source": null,
+        "values": [{
+            "value": "financiamento",
+            "created": "2017-04-07T14:39:33.687Z",
+            "updated": "2017-04-10T13:54:19.811Z",
+            "metadata": null,
+            "synonyms": ["carro", "dinheiro para carro", "financiamento", "financiar", "moto", "pra comprar uma moto", "pra comprar um carro", "pra comprar um veículo", "veiculo"]
+        }, {
+            "value": "pessoal",
+            "created": "2017-04-07T14:39:33.687Z",
+            "updated": "2017-04-07T14:39:33.687Z",
+            "metadata": null,
+            "synonyms": ["meu", "pessoal", "pra mim"]
+        }],
+        "created": "2017-04-07T14:39:33.687Z",
+        "updated": "2017-04-10T13:54:19.811Z",
+        "open_list": null,
+        "description": null
+    }, {
+        "type": null,
+        "entity": "negativo",
+        "source": null,
+        "values": [{
+            "value": "não",
+            "created": "2017-04-07T17:28:36.633Z",
+            "updated": "2017-04-07T17:28:49.843Z",
+            "metadata": null,
+            "synonyms": ["n", "nada a ver", "nao", "não", "nop", "nope"]
+        }],
+        "created": "2017-04-07T17:28:36.633Z",
+        "updated": "2017-04-07T17:28:49.843Z",
+        "open_list": null,
+        "description": null
+    }, {
+        "type": null,
+        "entity": "positivo",
+        "source": null,
+        "values": [{
+            "value": "sim",
+            "created": "2017-04-07T17:27:59.457Z",
+            "updated": "2017-04-07T17:28:44.312Z",
+            "metadata": null,
+            "synonyms": ["hai", "isso", "s", "sim", "yep", "yes"]
+        }],
+        "created": "2017-04-07T17:27:59.457Z",
+        "updated": "2017-04-07T17:28:44.312Z",
+        "open_list": null,
+        "description": null
+    }, {
+        "type": null,
+        "entity": "sys-currency",
+        "source": "system.entities",
+        "values": [],
+        "created": "2017-04-07T14:51:37.031Z",
+        "updated": "2017-04-07T14:51:37.031Z",
+        "open_list": null,
+        "description": null
+    }, {
+        "type": null,
+        "entity": "sys-date",
+        "source": "system.entities",
+        "values": [],
+        "created": "2017-04-07T14:51:35.803Z",
+        "updated": "2017-04-07T14:51:35.803Z",
+        "open_list": null,
+        "description": null
+    }, {
+        "type": null,
+        "entity": "sys-number",
+        "source": "system.entities",
+        "values": [],
+        "created": "2017-04-07T14:51:40.356Z",
+        "updated": "2017-04-07T14:51:40.356Z",
+        "open_list": null,
+        "description": null
+    }, {
+        "type": null,
+        "entity": "sys-percentage",
+        "source": "system.entities",
+        "values": [],
+        "created": "2017-04-07T14:51:38.290Z",
+        "updated": "2017-04-07T14:51:38.290Z",
+        "open_list": null,
+        "description": null
+    }, {
+        "type": null,
+        "entity": "sys-time",
+        "source": "system.entities",
+        "values": [],
+        "created": "2017-04-07T14:51:35.216Z",
+        "updated": "2017-04-07T14:51:35.216Z",
+        "open_list": null,
+        "description": null
+    }],
+    "language": "pt-br",
+    "metadata": null,
+    "description": "",
+    "dialog_nodes": [{
+        "go_to": null,
+        "output": {},
+        "parent": null,
+        "context": null,
+        "created": "2017-04-07T14:51:51.995Z",
+        "updated": "2017-04-10T14:51:20.049Z",
+        "metadata": null,
+        "conditions": "",
+        "description": null,
+        "dialog_node": "Valor do Empréstimo",
+        "previous_sibling": "Welcome"
+    }, {
+        "go_to": null,
+        "output": {},
+        "parent": "Valor do Empréstimo",
+        "context": null,
+        "created": "2017-04-07T14:52:27.565Z",
+        "updated": "2017-04-10T13:14:07.846Z",
+        "metadata": null,
+        "conditions": "!$carro",
+        "description": null,
+        "dialog_node": "Empréstimo Pessoal",
+        "previous_sibling": "node_11_1491829780662"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Desculpe, não posso te ajudar com isso."],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2017-04-07T14:39:42.612Z",
+        "updated": "2017-04-10T12:42:17.082Z",
+        "metadata": null,
+        "conditions": "anything_else",
+        "description": null,
+        "dialog_node": "Anything Else",
+        "previous_sibling": "Credito Pessoal"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Entendi que você está querendo crédito para financiamento né?"],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2017-04-10T12:46:53.390Z",
+        "updated": "2017-04-10T12:47:37.167Z",
+        "metadata": null,
+        "conditions": "@emprestimo:financiamento",
+        "description": null,
+        "dialog_node": "Financiamento",
+        "previous_sibling": "Farewell"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Entendi que você está querendo um crédito pessoal, certo?"],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2017-04-10T14:48:03.183Z",
+        "updated": "2017-04-10T14:49:59.050Z",
+        "metadata": null,
+        "conditions": "@emprestimo:pessoal",
+        "description": null,
+        "dialog_node": "Credito Pessoal",
+        "previous_sibling": "Financiamento"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Essas são as opções do modelo que você buscou.  $modelo"],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Valor do Empréstimo",
+        "context": {
+            "modelo": "<? input.text?>"
+        },
+        "created": "2017-04-10T13:14:21.781Z",
+        "updated": "2017-04-10T13:58:41.632Z",
+        "metadata": null,
+        "conditions": "$carro",
+        "description": null,
+        "dialog_node": "Financiamento Veiculo 1",
+        "previous_sibling": "Empréstimo Pessoal"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["O valor do seu empréstimo ficará em R$$result,00."],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Empréstimo Pessoal 2",
+        "context": null,
+        "created": "2017-04-10T14:08:42.697Z",
+        "updated": "2017-04-10T14:38:55.102Z",
+        "metadata": null,
+        "conditions": "",
+        "description": null,
+        "dialog_node": "Empréstimo Pessoal 3",
+        "previous_sibling": "node_17_1491833427369"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Olá, tudo bem?", "Olá."],
+                "selection_policy": "random"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2017-04-10T14:02:45.440Z",
+        "updated": "2017-04-10T14:03:38.128Z",
+        "metadata": null,
+        "conditions": "#greeting",
+        "description": null,
+        "dialog_node": "Greeting",
+        "previous_sibling": "Help"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Posso te ajudar na hora de solicitar crédito, tanto pessoal, quanto para financiamento de veículo, qual tipo de crédito você está interessado?", "Posso te ajudar com soliticação de crédito, tanto pessoal, quanto para financiamento de veículo, qual tipo de crédito você está interessado?"],
+                "selection_policy": "random"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2017-04-10T12:34:34.709Z",
+        "updated": "2017-04-10T14:22:26.856Z",
+        "metadata": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "Help",
+        "previous_sibling": "Valor do Empréstimo"
+    }, {
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Até mais.", "Obrigado pela conversa!", "Até.", "Bye bye."],
+                "selection_policy": "random"
+            }
+        },
+        "parent": null,
+        "context": null,
+        "created": "2017-04-10T14:03:44.390Z",
+        "updated": "2017-04-10T14:44:18.771Z",
+        "metadata": null,
+        "conditions": "#farewell",
+        "description": null,
+        "dialog_node": "Farewell",
+        "previous_sibling": "Greeting"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "Empréstimo Pessoal 3"
+        },
+        "output": {},
+        "parent": "Empréstimo Pessoal",
+        "context": null,
+        "created": "2017-04-10T14:07:52.338Z",
+        "updated": "2017-04-10T14:20:54.433Z",
+        "metadata": null,
+        "conditions": "@positivo",
+        "description": null,
+        "dialog_node": "Empréstimo Pessoal 2",
+        "previous_sibling": "Emprestimo Pessoal Negativo"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "Help"
+        },
+        "output": {},
+        "parent": null,
+        "context": null,
+        "created": "2017-04-07T14:39:37.691Z",
+        "updated": "2017-04-10T12:34:55.650Z",
+        "metadata": null,
+        "conditions": "welcome",
+        "description": null,
+        "dialog_node": "Welcome",
+        "previous_sibling": null
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "Help"
+        },
+        "output": {},
+        "parent": "Credito Pessoal",
+        "context": null,
+        "created": "2017-04-10T14:50:09.747Z",
+        "updated": "2017-04-10T14:50:34.637Z",
+        "metadata": null,
+        "conditions": "@negativo",
+        "description": null,
+        "dialog_node": "Credito Pessoal Negativo",
+        "previous_sibling": "Credito Pessoal 2"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "Help"
+        },
+        "output": {},
+        "parent": "Financiamento",
+        "context": null,
+        "created": "2017-04-10T12:50:03.434Z",
+        "updated": "2017-04-10T12:50:54.116Z",
+        "metadata": null,
+        "conditions": "@negativo",
+        "description": null,
+        "dialog_node": "Financiamento Negativo",
+        "previous_sibling": "Financiamento positivo"
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "Valor do Empréstimo"
+        },
+        "output": {},
+        "parent": "Empréstimo Pessoal",
+        "context": null,
+        "created": "2017-04-10T14:32:51.383Z",
+        "updated": "2017-04-10T14:33:29.943Z",
+        "metadata": null,
+        "conditions": "@negativo",
+        "description": null,
+        "dialog_node": "Emprestimo Pessoal Negativo",
+        "previous_sibling": null
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "Valor do Empréstimo"
+        },
+        "output": {},
+        "parent": "Financiamento",
+        "context": null,
+        "created": "2017-04-10T12:47:42.681Z",
+        "updated": "2017-04-10T12:51:06.290Z",
+        "metadata": null,
+        "conditions": "@positivo",
+        "description": null,
+        "dialog_node": "Financiamento positivo",
+        "previous_sibling": null
+    }, {
+        "go_to": {
+            "return": null,
+            "selector": "body",
+            "dialog_node": "Valor do Empréstimo"
+        },
+        "output": {
+            "text": {
+                "values": ["Certo."],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Credito Pessoal",
+        "context": {
+            "pessoal": true
+        },
+        "created": "2017-04-10T14:48:33.766Z",
+        "updated": "2017-04-10T14:51:09.687Z",
+        "metadata": null,
+        "conditions": "@positivo",
+        "description": null,
+        "dialog_node": "Credito Pessoal 2",
+        "previous_sibling": null
+    }, {
+        "type": "response_condition",
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["O valor é R$ $valor,00 , pelo período de $periodo mes(es), certo?"]
+            }
+        },
+        "parent": "Empréstimo Pessoal",
+        "context": {
+            "valor": "<? @sys-number[0].numeric_value?>",
+            "periodo": "<? @sys-number[1].numeric_value?>"
+        },
+        "created": "2017-04-07T14:52:49.262Z",
+        "updated": "2017-04-07T18:23:51.270Z",
+        "metadata": null,
+        "conditions": "",
+        "description": null,
+        "dialog_node": "node_8_1491576769123",
+        "previous_sibling": "Empréstimo Pessoal 2"
+    }, {
+        "type": "response_condition",
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Certo."],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Financiamento positivo",
+        "context": {
+            "financiamento": true
+        },
+        "created": "2017-04-10T12:49:08.525Z",
+        "updated": "2017-04-10T14:52:16.280Z",
+        "metadata": null,
+        "conditions": "",
+        "description": null,
+        "dialog_node": "node_7_1491828548820",
+        "previous_sibling": null
+    }, {
+        "type": "response_condition",
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Olá, tudo bem? Eu sou o assistente de crédito do Banco Votorantim."],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Welcome",
+        "context": null,
+        "created": "2017-04-07T14:39:54.713Z",
+        "updated": "2017-04-10T14:02:07.211Z",
+        "metadata": null,
+        "conditions": " !$user",
+        "description": null,
+        "dialog_node": "node_4_1491575994498",
+        "previous_sibling": null
+    }, {
+        "type": "response_condition",
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Olá $user,como está? Eu sou o assistente de crédito do Banco Votorantim."],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Welcome",
+        "context": null,
+        "created": "2017-04-07T14:41:28.717Z",
+        "updated": "2017-04-10T14:02:10.842Z",
+        "metadata": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "node_5_1491576088838",
+        "previous_sibling": "node_4_1491575994498"
+    }, {
+        "type": "response_condition",
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Qual modelo de carro você deseja financiar?"],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Valor do Empréstimo",
+        "context": {
+            "carro": true
+        },
+        "created": "2017-04-10T13:09:40.380Z",
+        "updated": "2017-04-10T14:31:06.622Z",
+        "metadata": null,
+        "conditions": "",
+        "description": null,
+        "dialog_node": "node_11_1491829780662",
+        "previous_sibling": "node_10_1491829762716"
+    }, {
+        "type": "response_condition",
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Qual o valor que você deseja financiar? E qual o período de tempo, em meses?"],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Valor do Empréstimo",
+        "context": null,
+        "created": "2017-04-10T13:09:22.416Z",
+        "updated": "2017-04-10T13:10:28.304Z",
+        "metadata": null,
+        "conditions": " !$financiamento",
+        "description": null,
+        "dialog_node": "node_10_1491829762716",
+        "previous_sibling": null
+    }, {
+        "type": "response_condition",
+        "go_to": null,
+        "output": {
+            "text": {
+                "values": ["Vou calcular o valor do financiamento pra você."],
+                "selection_policy": "sequential"
+            }
+        },
+        "parent": "Empréstimo Pessoal 2",
+        "context": {
+            "calcular": true
+        },
+        "created": "2017-04-10T14:10:27.071Z",
+        "updated": "2017-04-10T14:10:58.051Z",
+        "metadata": null,
+        "conditions": "",
+        "description": null,
+        "dialog_node": "node_17_1491833427369",
+        "previous_sibling": null
+    }],
+    "workspace_id": "877f1af4-4643-4ebc-9c61-4e2091444289",
+    "counterexamples": []
+}

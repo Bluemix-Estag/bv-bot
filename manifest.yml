@@ -1,0 +1,8 @@
+---
+applications:
+- name: bv-bot
+  host: bv-bot
+  memory: 256M
+  services:
+  - bv-bot-conversation
+  - bv-bot-db

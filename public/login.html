@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Banco Votorantim - the one with the AI Bot</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+
+    <!-- Core  -->
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+-->
+
+
+</head>
+
+<body class="homePage">
+
+    <div class="container">
+        <div class="outline">
+            <header>
+                <div class="banner">
+                    <div class="titleArea">
+
+                        <div class="logo"><img class="logoImage" src="images/bv-logo-novo.png"></div>
+                        <div class="name"><a class="home" href=".">Banco Votorantim.</a></div>
+
+                    </div>
+                    <div class="loginArea">
+                        <div class="menu"><a class="menulink" href="./about">Sobre</a></div>
+                        <div class="menu">
+                            <a class="menulink" onclick="showMenu()">Entrar</a>
+                        </div>
+                        <div id="status "></div>
+                    </div>
+                    <a href = "https://github.com/IBM-Bluemix/cloudco-insurance"><img height="25px" src = "images/github.svg"/></a>
+                </div>
+            </header>
+            <section class="layout ">
+                <div class="dropmenu" id="loginmenu">
+                    <div class="loginbox">
+                        <div class="loginform">
+                            <div class="loginfield">
+                                <img src="images/username.svg" class="icon">
+                                <input id="email" class="logininput" type="text" name="email" placeholder="E-mail" onkeypress="return newEvent(event,'login')">
+                            </div>
+                            <div class="loginfield">
+                                <img src="images/password.svg" class="icon">
+                                <input id="password" class="logininput" type="password" name="password" placeholder="Senha"  onkeypress="return newEvent(event,'login')">
+                            </div>
+                            <button class="loginbutton" onclick="login()">Entrar</button>
+                            <div class="loginnew"><a class="signuplink" href="./signup">Adicionar uma nova conta</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="messagearea" id="messagearea"></div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+<script src="src/cloudco.js "></script>
+
+</html>

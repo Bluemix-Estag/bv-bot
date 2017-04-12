@@ -1,0 +1,8 @@
+---
+applications:
+- name: dev-bv-bot
+  host: dev-bv-bot
+  memory: 256M
+  services:
+  - bv-bot-conversation
+  - dev-bv-bot-db

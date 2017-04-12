@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Banco Votorantim - the one with the AI Bot</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/benefit.css">
+    <link rel="stylesheet" href="/stylesheets/ana.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <style>
+        .carListTable {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        
+        .carImg {
+            height: 150px;
+            width: 30%;
+        }
+        
+        .carImg img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .carDetails {
+            width: 60%;
+            height: 150px;
+        }
+        #typing_div{
+            
+        }
+        #typing_div img{
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body class="homePage" onload="initConvOnLoad();">
+    <div class="healthContainer">
+        <header>
+            <div class="banner">
+                <div class="titleArea">
+                    <div class="logo"><img class="logoImage" src="images/bv-logo-novo.png"></div>
+                    <div class="name"><a class="home" href=".">Banco Votorantim.</a></div>
+                </div>
+                <div class="loginArea">
+                    <div id="login" class="menu"><a class="menulink" href="./login">Entrar</a></div>
+                    <div id="logout" class="menu"><a class="menulink" href="./logout">Sair</a></div>
+                    <div id="status "></div>
+                </div>
+            </div>
+            <div class="banner2">
+                <div class="titleArea">
+                    <div class="name2"><a class="titulo">Lorem ipsum dolor sit amet.</a></div>
+                </div>
+            </div>
+        </header>
+        <section class="healthLayout">
+            <div class="chatbot">
+                <div class="anaBanner">Dúvidas? Experimente perguntar a Ana.</div>
+                <div id="chatBox" class="dialogcontainer"></div>
+                <div id="typing_div"></div>
+                <input type=t ext id="chatMessage" class="dialoginput" placeholder="Digite sua mensagem aqui " onkeypress="return newEvent(event)" /> </div>
+        </section>
+    </div>
+</body>
+<script src="src/cloudco.js"></script>
+<script src="src/bv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+
+</html>

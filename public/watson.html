@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>BV - Chatbot</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/slider.css">
+</head>
+
+<body class="homePage">
+    <div class="container">
+        <div class="outline">
+            <header>
+                <div class="banner">
+                    <div class="titleArea">
+                        <div class="logo"><img class="logoImage" src="images/bv-logo-novo.png"></div>
+                        <div class="name"><a class="home" href=".">Banco Votorantim.</a></div>
+                    </div>
+                    <div class="loginArea">
+                        <div class="menu"><a class="menulink" href="./about">Sobre</a></div>
+                        <div id="login" class="menu"><a class="menulink" href="./login">Entrar</a></div>
+                        <div id="logout" class="menu" style="display:none"><a class="menulink" href="./logout">Sair</a></div>
+                        <div id="status "></div>
+                    </div>
+                    <a href = "https://github.com/IBM-Bluemix/cloudco-insurance"><img height="25px" src = "images/github.svg"/></a>
+                </div>
+            </header>
+            <section class="layout">
+                <div id="guidance" class="guidance">
+                    <div id="instructions" class="instructions">Selecione os critérios interessantes para você</div>
+                </div>
+                <!-- primary section -->
+                <div id="input" class="input">
+                    <div id="elements" class="elements">
+                    </div>
+                </div>
+
+                <button id="process" class="quote" onclick="process()">Avaliar</button>
+                <div id="filter" class="filter">
+                </div>
+                <div id="results" class="results">
+                    <div id="resultsBar" class="resultsBar">
+                        <div id="instructions" class="instructions">Suas escolhas de Políticas</div>
+                        <div id="watson" class="watson" onclick="toggleRadar()"><img class="glasses" src="images/wash/glasses.svg">Visualizar Watson Tradeoffs</div>
+                    </div>
+                    <div id="output" class="output">
+                        <div class="radarContainer">
+                            <div id="radar" class="radar"></div>
+                        </div>
+                        <div id="policies" class="policies">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- layout section -->
+        </div>
+    </div>
+    <script src="./src/PolicyBuilder.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.1/Chart.min.js"></script>
+</body>
+
+</html>
