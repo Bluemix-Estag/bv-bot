@@ -1,7 +1,7 @@
 "use strict";
 // Variables for chat and stored context specific events
 var params = {}; // Object for parameters sent to the Watson Conversation service
-var watson = 'Ana';
+var watson = 'BV';
 var user = '';
 var text = '';
 var context;
@@ -132,7 +132,7 @@ function displayMessage(text, user) {
     bubble.className = 'message'; // Wrap the text first in a message class for common formatting
     // Set chat bubble color and position based on the user parameter
     if (user === watson) {
-        var name = "Ana";
+        var name = "BV";
         bubble.innerHTML = "<div class='anaTitle'>" + name + " | " + getTimestamp() + "</div><div class='ana'>" + text + "</div>";
     }
     else {
@@ -152,7 +152,7 @@ function displayCarsMessage(carsArray, watson) {
     var bubble = document.createElement('div');
     bubble.className = 'message'; // Wrap the text first in a message class for common formatting
     // Set chat bubble color and position based on the user parameter
-    var name = "Ana";
+    var name = "BV";
     bubble.innerHTML = "<div class='anaTitle'>" + name + " | " + getTimestamp() + "</div><div class='ana'>";
     //        bubble.innerHTML += "<div class='carListTable'>"
     for (var i = 0; i < carsArray.length; i++) {
