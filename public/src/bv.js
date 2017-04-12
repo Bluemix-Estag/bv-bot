@@ -74,11 +74,25 @@ function userMessage(message) {
             text = response.output.text; // Only display the first response
             context = response.context; // Store the context for next round of questions
             console.log("Got response from Ana: ", JSON.stringify(response));
-            if (response['cars']) {
+            if (response['cars'] && response['cars'].length > 0 && response['context']['flag']) {
+                delete response['context']['flag'];
                 displayCarsMessage(response['cars'], watson);
             }
+            
+            if(response['cnf']){
+                delete response['cnf'];
+                userMessage('cnf');
+            }
+            
             if (response['context']['result'] && response['context']['trigger']) {
                 delete response['context']['trigger'];
+                if (context) {
+                    context['result'] = response['context']['result'];
+                }
+                userMessage('ok');
+            }
+            if(response['context']['pessoal'] && response['context']['result'] && response['context']['calcular']){
+                delete response['context']['calcular'];
                 if (context) {
                     context['result'] = response['context']['result'];
                 }
