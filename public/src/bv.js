@@ -23,13 +23,10 @@ function newEvent(e) {
         // Some claim steps are handled in newEvent and others are handled in userMessage
         if (text) {
             // Display the user's text in the chat box and null out input box
-            
             userMessage(text);
             displayMessage(text, user);
             loadingMessage();
             userInput.value = '';
-            
-            
         }
         else {
             // Blank user message. Do nothing.
@@ -58,11 +55,7 @@ function userMessage(message) {
         params.context = context;
         console.log('Params: ' + JSON.stringify(params));
     }
-    
-    
-    
-    console.log('nome: '+user);
-    
+    console.log('nome: ' + user);
     var xhr = new XMLHttpRequest();
     var uri = '/api/ana';
     xhr.open('POST', uri, true);
@@ -79,16 +72,14 @@ function userMessage(message) {
                 displayCarsMessage(response['cars'], watson);
                 userMessage('ok');
             }
-            
-            if(response['context']['cnf']){
+            if (response['context']['cnf']) {
                 delete response['context']['cnf'];
                 delete response['context']['flag'];
                 delete response['context']['carro'];
                 delete response['context']['modelo'];
-//                delete response['context']['modelo'];
+                //                delete response['context']['modelo'];
                 userMessage('cnf');
             }
-            
             if (response['context']['result'] && response['context']['trigger']) {
                 delete response['context']['trigger'];
                 if (context) {
@@ -96,7 +87,7 @@ function userMessage(message) {
                 }
                 userMessage('ok');
             }
-            if(response['context']['pessoal'] && response['context']['result'] && response['context']['calcular']){
+            if (response['context']['pessoal'] && response['context']['result'] && response['context']['calcular']) {
                 console.log(JSON.stringify(context));
                 delete response['context']['modelo'];
                 delete response['context']['calcular'];
@@ -107,6 +98,18 @@ function userMessage(message) {
             }
             for (var txt in text) {
                 displayMessage(text[txt], watson);
+            }
+            if (response['context']['redirect']) {
+                function showCounter(i) {
+                    setTimeout(function () {
+                        document.getElementById('typing_div').innerHTML = '<p style="font-size:10pt;margin:0;padding:0;">redirecionando em ' + i + ' s</p>';
+                        if (i == 0) {
+                            location.reload(true);
+                            window.open('https://www.bancovotorantimcartoes.com.br/', '_blank').focus(); return false; }
+                        return showCounter(i-1);
+                    }, 1000);
+                }
+                showCounter(3);
             }
         }
         else {
@@ -144,12 +147,9 @@ function getTimestamp() {
  * @return null
  */
 function displayMessage(text, user) {
-    
     loadingMessageStop();
-    
     var chat = document.getElementById('chatBox');
     var bubble = document.createElement('div');
-     
     bubble.className = 'message'; // Wrap the text first in a message class for common formatting
     // Set chat bubble color and position based on the user parameter
     if (user === watson) {
@@ -194,14 +194,38 @@ function chooseCar(name, price) {
     userMessage('ok');
 }
 
-
-function loadingMessage(){
-    
+function loadingMessage() {
     document.getElementById('typing_div').innerHTML = '<img src ="images/watson.gif"/>';
-    document.getElementById('chatBox').scrollTop = document.getElementById('chatBox').scrollHeight; 
-    
-//    document.getElementById('typing_div').innerHTML = '<img src ="images/watson.gif"/>';
+    document.getElementById('chatBox').scrollTop = document.getElementById('chatBox').scrollHeight;
+    //    document.getElementById('typing_div').innerHTML = '<img src ="images/watson.gif"/>';
 }
-function loadingMessageStop(){
+
+function loadingMessageStop() {
     document.getElementById('typing_div').innerHTML = '';
 }
+
+
+
+
+  var firstTime = false;
+    var opened = false;
+
+    function showBot(element) {
+        var element = document.getElementById("custom-bot");
+        var input = document.getElementById("chatInput");
+        var chatBox = document.getElementById("chatBox");
+        if (!opened) {
+            element.style.animationName = 'bot-animate-open';
+            input.style.display = "block";
+            chatBox.style.display = "block";
+            opened = true;
+
+            if(!firstTime) initConvOnLoad();
+                        firstTime = true;
+        } else {
+            element.style.animationName = 'bot-animate-close';
+                        input.style.display = "none";
+                        chatBox.style.display = "none";
+            opened = false;
+        }
+    }

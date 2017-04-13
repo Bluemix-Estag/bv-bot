@@ -1341,38 +1341,78 @@
      animation-fill-mode: forwards;
      animation-duration: 0.8s;
      height: 40px;
-
  }
-
-@keyframes bot-animate-open{
-    from{height: 40px;}
-    to{height: 500px};
-}
-@keyframes bot-animate-close{
-    from{height: 500px;}
-    to{height: 40px};
-}
-
-
-.bot-title{
-    height: 40px;
-    background-color: #9c0e31;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 4px;
-    color: white;
-}
-
-.chatInput{
-    display: none;
+ 
+ @keyframes bot-animate-open {
+     from {
+         height: 40px;
+     }
+     to {
+         height: 500px
+     }
+     ;
+ }
+ 
+ @keyframes bot-animate-close {
+     from {
+         height: 500px;
+     }
+     to {
+         height: 40px
+     }
+     ;
+ }
+ 
+ .bot-title {
+     height: 40px;
+     background-color: #9c0e31;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top-left-radius: 4px;
+     color: white;
+ }
+ 
+ .chatInput {
+     display: none;
      border: none;
      border-top: 2px solid #9c0e31;
-    border-bottom: 2px solid #EAEAEA;
-    width: 100%;
-    height: 10%;
-    line-height: 50px;
-    font-weight: bold;
-/*    padding-left: 10px;*/
-    color: #000;
-}
+     border-bottom: 2px solid #EAEAEA;
+     width: 100%;
+     height: 10%;
+     line-height: 50px;
+     font-weight: bold;
+     /*    padding-left: 10px;*/
+     color: #000;
+ }
+ 
+ .carListTable {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+     background-color: #fff;
+     cursor: pointer;
+ }
+ 
+ .carImg {
+     height: 150px;
+     width: 30%;
+ }
+ 
+ .carImg img {
+     width: 100px;
+     height: 100px;
+ }
+ 
+ .carDetails {
+     width: 60%;
+     height: 150px;
+ }
+ 
+ #typing_div {}
+ 
+ #typing_div img {
+     width: 30px;
+     height: 30px;
+ }
