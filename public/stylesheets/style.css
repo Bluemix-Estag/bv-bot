@@ -1341,6 +1341,7 @@
      animation-fill-mode: forwards;
      animation-duration: 0.8s;
      height: 40px;
+
  }
 
 @keyframes bot-animate-open{
@@ -1355,10 +1356,12 @@
 
 .bot-title{
     height: 40px;
-    background-color: #ff8686;
+    background-color: #9c0e31;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 4px;
+    color: white;
 }
 
 .chatInput{
