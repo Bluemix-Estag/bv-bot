@@ -230,8 +230,12 @@ var chatbot = {
                         request(options, callback2);
                     }
                     else if (data['context']['period'] && data['context']['entry'] && data['context']['trigger']) {
+                        var entry = data['context']['entry'];
+                        if(entry.toString().indexOf('%') != -1){
+                            entry = parseFloat(entry.slice(0,entry.toString().indexOf('%')))*data['context']['preco'] / 100;
+                        }
                         var options2 = {
-                            url: "https://voto-sample.mybluemix.net/sample?period=" + data['context']['period'] + "&entry=" + data['context']['entry'] + "&total=" + data['context']['preco'], // temos que setar o carro escolhido e depois escolher ele no vetor info[i][3] que retorna o preco para a api de financiamento
+                            url: "https://voto-sample.mybluemix.net/sample?period=" + data['context']['period'] + "&entry=" + entry + "&total=" + data['context']['preco'], // temos que setar o carro escolhido e depois escolher ele no vetor info[i][3] que retorna o preco para a api de financiamento
                             headers: {
                                 Accept: 'text/json'
                             }
