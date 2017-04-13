@@ -17,62 +17,53 @@ Ou se preferir, pode enviar apenas a aplicação seguindo os passos abaixo.
 
 1. Caso não tenha uma conta no Bluemix [inscreva-se][bluemix_reg_url]
 
-1. Baixe e Instale a ferramenta [Cloud Foundry CLI][cloud_foundry_url].
+2. Baixe e Instale a ferramenta [Cloud Foundry CLI][cloud_foundry_url].
 
-1. O app depende dos microsserviços de [Catálogo](https://github.com/carlosbu/insurance-catalog) e [Demandas](https://github.com/carlosbu/insurance-orders). Certifique-se de enviá-los ao Bluemix primeiro.
-
-1. Clone a aplicação para seu ambiente de trabalho pelo terminal de comandos usando o seguinte comando:
+3. Clone a aplicação para seu ambiente de trabalho pelo terminal de comandos usando o seguinte comando:
 
   ```
-  git clone https://github.com/carlosbu/insurance-bot.git
+  git clone https://github.com/BluemixBrasil/bv-bot.git
   ```
 
-1. `cd` insira-seu-diretório
+4. `cd` insira-seu-diretório
 
-1. Abra o arquivo `manifest.yml` e mude o valor `host` para um nome único.
+5. Abra o arquivo `manifest.yml` e mude o valor `host` para um nome único.
 
   Seu host criado definirá o subdomínio da URL de sua aplicação:  `<host>.mybluemix.net`
 
-1. Conecte a aplicação no terminal de comandos e siga os comandos a seguir para logar:
+6. Conecte a aplicação no terminal de comandos e siga os comandos a seguir para logar:
 
   ```
   cf login -a https://api.ng.bluemix.net
   ```
 
-1. Crie um serviço cloudant no Bluemix
+7. Crie um serviço cloudant no Bluemix
 
   ```
-  cf create-service cloudantNoSQLDB Lite insurance-bot-db
+  cf create-service cloudantNoSQLDB Lite bv-bot-db
   ```
 
-1. Crie um serviço de conversation no Bluemix
+8. Crie um serviço de conversation no Bluemix
 
   ```
-  cf create-service conversation standard insurance-bot-conversation
+  cf create-service conversation standard bv-bot-conversation
   ```
 
-1. Envie o app para o Bluemix
+9. Envie o app para o Bluemix
 
   ```
   cf push --no-start
   ```
 
-1. Defina uma variável apontando o envio para a API do catálogo.
+10. Defina uma variável apontando o id do workspace.
 
   ```
-  cf set-env insurance-bot CATALOG_URL https://your-insurance-catalog.mybluemix.net
+  cf set-env bv-bot CONVERSATION_WORKSPACE 
   ```
-
-1. Defina uma variável apontando o envio para a API das demandas.
-
-  ```
-  cf set-env insurance-bot ORDERS_URL https://your-insurance-orders.mybluemix.net
-  ```
-
-1. Inicie seu app
+11. Inicie seu app
 
   ```
-  cf start insurance-bot
+  cf start bv-bot
   ```
 
 E voila! Você tem sua própria versão do app rodando no Bluemix.
@@ -81,41 +72,33 @@ E voila! Você tem sua própria versão do app rodando no Bluemix.
 
 1. Caso não tenha uma conta no Bluemix [inscreva-se][bluemix_reg_url]
 
-1. Caso ainda não tenha baixado o node [clique aqui para baixar][download_node_url] e instalar em sua máquina.
+2. Caso ainda não tenha baixado o node [clique aqui para baixar][download_node_url] e instalar em sua máquina.
 
-1. O app depende dos microsserviços de [Catálogo](https://github.com/carlosbu/insurance-catalog) e [Demandas](https://github.com/carlosbu/insurance-orders). Certifique-se de enviá-los ao Bluemix primeiro.
-
-1. Crie um serviço cloudant no Bluemix
+3. Crie um serviço cloudant no Bluemix
 
   ```
-  cf create-service cloudantNoSQLDB Lite insurance-bot-db
+  cf create-service cloudantNoSQLDB Lite bv-bot-db
   ```
 
-1. Crie um serviço de conversation no Bluemix
+4. Crie um serviço de conversation no Bluemix
 
   ```
-  cf create-service conversation standard insurance-bot-conversation
+  cf create-service conversation standard bv-bot-conversation
   ```
 
-1. No diretório de checkout copie o arquivo ```vcap-local.template.json``` para ```vcap-local.json```. Edite ```vcap-local.json``` e atualize as crendeciais dos serviços de Cloudant e de Conversation. Você pode obter as credenciais do serviço direto do console do Bluemix.
+5. No diretório de checkout copie o arquivo ```vcap-local.template.json``` para ```vcap-local.json```. Edite ```vcap-local.json``` e atualize as crendeciais dos serviços de Cloudant e de Conversation. Você pode obter as credenciais do serviço direto do console do Bluemix.
 
   ```
   cp vcap-local.template.json vcap-local.json
   ```
-
-1. No diretório de checkou copie o arquivo ```.template.env``` para ```.env```. Edite ```.env``` e atualize as crendeciais dos serviços de Cloudant e de Conversation. Refira-se a [este passo](#importWorkspace) para receber uma id de workspace.
-
-  ```
-  cp .template.env .env
-  ```
-
-1. Instalar
+  
+6. Instalar
 
   ```
   npm install
   ```
 
-1. Executar
+7. Executar
 
   ```
   npm start
