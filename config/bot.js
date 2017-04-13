@@ -202,6 +202,7 @@ var chatbot = {
                                     data['cars'] = result;
                                     delete data['context']['carro'];
                                     delete data['context']['modelo'];
+                                    if(data['cars'].length ==0) data['context']['cnf'] = true;
                                     if (data.context.system.dialog_turn_counter > 1) {
                                         chatLogs(owner, conv, data, () => {
                                             return callback(null, data);
