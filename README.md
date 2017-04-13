@@ -54,13 +54,8 @@ Ou se preferir, pode enviar apenas a aplicação seguindo os passos abaixo.
   ```
   cf push --no-start
   ```
-
-10. Defina uma variável apontando o id do workspace.
-
-  ```
-  cf set-env bv-bot CONVERSATION_WORKSPACE 
-  ```
-11. Inicie seu app
+  
+10. Inicie seu app
 
   ```
   cf start bv-bot

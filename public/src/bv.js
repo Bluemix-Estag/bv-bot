@@ -97,6 +97,8 @@ function userMessage(message) {
                 userMessage('ok');
             }
             if(response['context']['pessoal'] && response['context']['result'] && response['context']['calcular']){
+                console.log(JSON.stringify(context));
+                delete response['context']['modelo'];
                 delete response['context']['calcular'];
                 if (context) {
                     context['result'] = response['context']['result'];
